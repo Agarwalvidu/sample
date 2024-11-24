@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h2>Registration Form</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type=" text" placeholder="Enter Full Name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type=" email" placeholder="Enter valid Email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="university">University Name</label>
+                    <input type=" text" placeholder="Enter your University name" name="uniname" required>
+                </div>
+                <div class="input-box">
+                    <label for="mobile_num">Mobile Number</label>
+                    <input type=" tel" placeholder="Enter your Mobile Number" name="mobnum" required>
+                </div>
+                <div class="input-box">
+                    <label for="ques">Question</label>
+                    <input type=" text" placeholder="Why should we choose you" name="ques" required>
+                </div>
+                <div class="input-box">
+                    <label for="doubts">Any Doubts</label>
+                    <input type=" text" placeholder="Ask your doubt if any" name="name" required>
+                </div>
+                <span class="genter-title">Gender</span>
+                <div class="gender-container">
+                    <label>
+                      <input type="radio" name="gender" value="male">
+                      <span class="radio-circle"></span> Male
+                    </label>
+                    <label>
+                      <input type="radio" name="gender" value="female">
+                      <span class="radio-circle"></span> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        <span class="radio-circle"></span> Other
+                      </label>
+                  </div>
+            </div>
+            <div class="alert">
+                <p>On the basis of your response you will be shortlisted. Wait for the email for futher procedure.</p>
+            </div>
+            <div class="btn-container">
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

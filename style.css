@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(2,0,.61) 0%, rgba(9,9,121,1) 35%, rgb(6, 137, 163) 100%);
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container .title{
+   font-size: 3.5rem;
+   color:#ffffff;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .events-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.container .events-container .event{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .events-container .event:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container .events-container .event img{
+   height: 25rem;
+}
+
+.container .events-container .event:hover img{
+   transform: scale(.9);
+}
+
+.container .events-container .event h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   font-weight: bold;
+   color:#0312b8;
+}
+
+.container .events-container .event:hover h3{
+   color:#170569;
+}
+
+.container .events-container .event .readmore{
+   font-size: 2rem;
+   color:#010234;
+   font-weight: bold;
+}
+
+.events-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.events-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 40rem;
+}
+
+.events-preview .preview.active{
+   display: inline-block;
+}
+
+.events-preview .preview img{
+   height: 30rem;
+}
+
+.events-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+.events-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.events-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.events-preview .preview .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.events-preview .preview .stars i{
+   color:#27ae60;
+}
+
+.events-preview .preview .stars span{
+   color:#999;
+}
+
+.events-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#777;
+}
+
+.events-preview .preview .readmore{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#27ae60;
+}
+
+.events-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.events-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+}
+
+.events-preview .preview .buttons a.contact{
+   background: #444;
+   color:#fff;
+}
+
+.events-preview .preview .buttons a.contact:hover{
+   background: #111;
+}
+
+.events-preview .preview .buttons a.Register:hover{
+   background: #444;
+   color:#fff;
+}
+
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .events-preview .preview img{
+      height: 25rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}
